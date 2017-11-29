@@ -12,7 +12,7 @@ namespace _2_Chatter.Controllers
 {
     public class ChatsController : Controller
     {
-        private Entities db = new Entities();
+        private ChatterConnection db = new ChatterConnection();
 
         // GET: Chats
         public ActionResult Index()
@@ -48,7 +48,7 @@ namespace _2_Chatter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,UserName,Message,TimeSent,UserID")] Chat chat)
+        public ActionResult Create([Bind(Include = "ID,UserID,Message,TimeSent")] Chat chat)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace _2_Chatter.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,UserName,Message,TimeSent,UserID")] Chat chat)
+        public ActionResult Edit([Bind(Include = "ID,UserID,Message,TimeSent")] Chat chat)
         {
             if (ModelState.IsValid)
             {

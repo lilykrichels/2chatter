@@ -15,10 +15,9 @@ namespace _2_Chatter
     public partial class Chat
     {
         public int ID { get; set; }
-        //public string UserName { get; set; }
+        public string UserID { get; set; }
         public string Message { get; set; }
         public System.DateTime TimeSent { get; set; }
-        public string UserID { get; set; }
     
         public virtual AspNetUser AspNetUser { get; set; }
     }

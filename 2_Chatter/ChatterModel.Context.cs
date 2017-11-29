@@ -13,10 +13,10 @@ namespace _2_Chatter
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class ChatterConnection : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public ChatterConnection()
+            : base("name=ChatterConnection")
         {
         }
     
@@ -25,10 +25,10 @@ namespace _2_Chatter
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Chat> Chats { get; set; }
         public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
+        public virtual DbSet<Chat> Chats { get; set; }
     }
 }

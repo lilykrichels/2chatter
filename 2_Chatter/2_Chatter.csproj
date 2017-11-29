@@ -219,34 +219,34 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="AspNetRole.cs">
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUser.cs">
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Chat.cs">
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChatModel.Context.cs">
+    <Compile Include="ChatterModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ChatModel.Context.tt</DependentUpon>
+      <DependentUpon>ChatterModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChatModel.cs">
+    <Compile Include="ChatterModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ChatModel.tt</DependentUpon>
+      <DependentUpon>ChatterModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChatModel.Designer.cs">
+    <Compile Include="ChatterModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ChatModel.edmx</DependentUpon>
+      <DependentUpon>ChatterModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChatsController.cs" />
@@ -262,15 +262,15 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ChatModel.Context.tt">
+    <Content Include="ChatterModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ChatModel.edmx</DependentUpon>
-      <LastGenOutput>ChatModel.Context.cs</LastGenOutput>
+      <DependentUpon>ChatterModel.edmx</DependentUpon>
+      <LastGenOutput>ChatterModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ChatModel.tt">
+    <Content Include="ChatterModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ChatModel.edmx</DependentUpon>
-      <LastGenOutput>ChatModel.cs</LastGenOutput>
+      <DependentUpon>ChatterModel.edmx</DependentUpon>
+      <LastGenOutput>ChatterModel.cs</LastGenOutput>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -291,12 +291,12 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <EntityDeploy Include="ChatModel.edmx">
+    <EntityDeploy Include="ChatterModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ChatModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ChatterModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="ChatModel.edmx.diagram">
-      <DependentUpon>ChatModel.edmx</DependentUpon>
+    <Content Include="ChatterModel.edmx.diagram">
+      <DependentUpon>ChatterModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
